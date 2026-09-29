@@ -7,7 +7,7 @@ load_dotenv()
 
 def analyse(df, question):
     llm = ChatGroq(
-        model="groq/compound-mini",
+        model="llama-3.1-8b-instant",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0
     )
